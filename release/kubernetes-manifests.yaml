@@ -43,6 +43,8 @@ spec:
       containers:
       - name: server
         securityContext:
+          seccompProfile:
+            type: RuntimeDefault
           allowPrivilegeEscalation: false
           capabilities:
             drop:
