@@ -928,6 +928,7 @@ spec:
       containers:
       - name: server
         securityContext:
+          type: RuntimeDefault
           allowPrivilegeEscalation: false
           capabilities:
             drop:
