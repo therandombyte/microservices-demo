@@ -413,6 +413,8 @@ spec:
       containers:
       - name: server
         securityContext:
+          seccompProfile:
+            type: RuntimeDefault
           allowPrivilegeEscalation: false
           capabilities:
             drop:
@@ -486,6 +488,8 @@ spec:
       containers:
       - name: server
         securityContext:
+          seccompProfile:
+            type: RuntimeDefault
           allowPrivilegeEscalation: false
           capabilities:
             drop:
@@ -559,6 +563,8 @@ spec:
       containers:
       - name: server
         securityContext:
+          seccompProfile:
+            type: RuntimeDefault
           allowPrivilegeEscalation: false
           capabilities:
             drop:
@@ -631,6 +637,8 @@ spec:
       containers:
       - name: redis
         securityContext:
+          seccompProfile:
+            type: RuntimeDefault
           allowPrivilegeEscalation: false
           capabilities:
             drop:
@@ -699,6 +707,8 @@ spec:
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
       securityContext:
+        seccompProfile:
+            type: RuntimeDefault
         fsGroup: 1000
         runAsGroup: 1000
         runAsNonRoot: true
@@ -789,6 +799,8 @@ spec:
       containers:
       - name: server
         securityContext:
+          seccompProfile:
+            type: RuntimeDefault
           allowPrivilegeEscalation: false
           capabilities:
             drop:
@@ -862,6 +874,8 @@ spec:
       containers:
       - name: server
         securityContext:
+          seccompProfile:
+            type: RuntimeDefault
           allowPrivilegeEscalation: false
           capabilities:
             drop:
